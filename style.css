@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  height: 75vh;
+  justify-content: center;
+  background-color: #bbcaef;
+}
+/* 
+.search-bar {
+  display: flex;
+  background-color: #ffffff;
+  align-items: center;
+  min-width: 700px;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  height: 60px; 
+}
+*/
+
+.search-bar {
+  display: flex;
+  background-color: #ffffff;
+  align-items: center;
+  min-width: 700px;
+  border-radius: 50px;
+  height: 50px;
+}
+/* 
+.dropdown {
+  position: relative;
+  flex: 1;
+  background-color: #9a1663;
+  border-radius: 50px 50px 50px 50px; 
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center; 
+  height: 100%;
+}
+*/
+
+.dropdown {
+  position: relative;
+  width: 280px;
+  background-color: #9a1663;
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.dropdown-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+}
+
+.dropdown-text i {
+  margin-left: 10px;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: #ffffff;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.dropdown-list.show {
+  max-height: 300px;
+}
+
+.dropdown-list-item {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  transition: margin-left 0.2s ease, color 0.2s ease;
+  height: 50px;
+}
+
+.dropdown-list-item:hover {
+  margin-left: 0.5rem;
+  color: #9a1663;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  color: #9a1663;
+}
+
+.search-box input {
+  padding: 1rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #9a1663;
+  border: 0;
+  outline: 0;
+}
+
+.search-box i {
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.search-box input::placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #9a1663;
+}
